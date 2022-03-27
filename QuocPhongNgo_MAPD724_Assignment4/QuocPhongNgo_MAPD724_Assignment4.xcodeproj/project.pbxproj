@@ -18,6 +18,10 @@
 		31A9B4C727E7E2050070AD77 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31A9B4C527E7E2050070AD77 /* Poppins-Regular.ttf */; };
 		31A9B4C927E7E4000070AD77 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31A9B4C827E7E4000070AD77 /* Poppins-SemiBold.ttf */; };
 		31A9B4CB27E8394A0070AD77 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9B4CA27E8394A0070AD77 /* MainView.swift */; };
+		31A9B4CF27EE5C530070AD77 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9B4CE27EE5C530070AD77 /* SettingView.swift */; };
+		31A9B4D227EFBBD70070AD77 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9B4D127EFBBD70070AD77 /* Theme.swift */; };
+		31A9B4D427EFBDEA0070AD77 /* ThemeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9B4D327EFBDEA0070AD77 /* ThemeCollection.swift */; };
+		31A9B4D627EFE7380070AD77 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9B4D527EFE7380070AD77 /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		31A9B4C527E7E2050070AD77 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		31A9B4C827E7E4000070AD77 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		31A9B4CA27E8394A0070AD77 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		31A9B4CE27EE5C530070AD77 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		31A9B4D127EFBBD70070AD77 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		31A9B4D327EFBDEA0070AD77 /* ThemeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollection.swift; sourceTree = "<group>"; };
+		31A9B4D527EFE7380070AD77 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 		31A9B4A827E7DA800070AD77 /* QuocPhongNgo_MAPD724_Assignment4 */ = {
 			isa = PBXGroup;
 			children = (
+				31A9B4D027EFBBC60070AD77 /* Theme */,
 				31A9B4C227E7E1950070AD77 /* Resources */,
 				31A9B4BC27E7E0AE0070AD77 /* Common */,
 				31A9B4A927E7DA800070AD77 /* QuocPhongNgo_MAPD724_Assignment4App.swift */,
@@ -74,6 +83,7 @@
 				31A9B4B427E7DA820070AD77 /* QuocPhongNgo_MAPD724_Assignment4.xcdatamodeld */,
 				31A9B4AF27E7DA820070AD77 /* Preview Content */,
 				31A9B4CA27E8394A0070AD77 /* MainView.swift */,
+				31A9B4CE27EE5C530070AD77 /* SettingView.swift */,
 			);
 			path = QuocPhongNgo_MAPD724_Assignment4;
 			sourceTree = "<group>";
@@ -118,6 +128,16 @@
 				31A9B4C527E7E2050070AD77 /* Poppins-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		31A9B4D027EFBBC60070AD77 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				31A9B4D127EFBBD70070AD77 /* Theme.swift */,
+				31A9B4D327EFBDEA0070AD77 /* ThemeCollection.swift */,
+				31A9B4D527EFE7380070AD77 /* ThemeManager.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,13 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A9B4D227EFBBD70070AD77 /* Theme.swift in Sources */,
 				31A9B4B327E7DA820070AD77 /* Persistence.swift in Sources */,
 				31A9B4CB27E8394A0070AD77 /* MainView.swift in Sources */,
 				31A9B4C127E7E0D90070AD77 /* Style.swift in Sources */,
 				31A9B4AC27E7DA800070AD77 /* ContentView.swift in Sources */,
+				31A9B4D427EFBDEA0070AD77 /* ThemeCollection.swift in Sources */,
 				31A9B4BF27E7E0CF0070AD77 /* Font.swift in Sources */,
+				31A9B4CF27EE5C530070AD77 /* SettingView.swift in Sources */,
 				31A9B4AA27E7DA800070AD77 /* QuocPhongNgo_MAPD724_Assignment4App.swift in Sources */,
 				31A9B4B627E7DA820070AD77 /* QuocPhongNgo_MAPD724_Assignment4.xcdatamodeld in Sources */,
+				31A9B4D627EFE7380070AD77 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

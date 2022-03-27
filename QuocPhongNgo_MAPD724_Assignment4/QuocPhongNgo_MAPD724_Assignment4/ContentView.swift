@@ -4,7 +4,7 @@
  * Author:         Quoc Phong Ngo
  * Student ID:   301148406
  * Version:        1.0
- * Date Modified:   March 20th, 2022
+ * Date Modified:   March 26th, 2022
  */
 
 import SwiftUI
@@ -12,14 +12,16 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject private var themeManager: ThemeManager
 
     var body: some View {
         NavigationView {
             ZStack {
-            Rectangle()
-                .foregroundColor(Color(red: 197/255,
-                    green: 231/255, blue: 255/255))
-                .edgesIgnoringSafeArea(.all)
+//            Rectangle()
+//                .foregroundColor(Color(red: 197/255,
+//                    green: 231/255, blue: 255/255))
+//                .edgesIgnoringSafeArea(.all)
+                themeManager.selectedTheme.primaryColor.edgesIgnoringSafeArea(.all)
             
                 VStack {
                     HStack {
@@ -49,24 +51,24 @@ struct ContentView: View {
                             // Start Button
                             Text("START")
                             .font(Style.TextSize.subtitle3.font(.semiBold))
-                            .foregroundColor(Color.red)
+                            .foregroundColor(.accentColor)
                             .frame(width: 125, height: 36, alignment: .center)
+                            .accentColor(.white)
                             .background(RoundedRectangle(cornerRadius: 24,
-                                style: .continuous)
-                            .stroke(Color.blue))
+                            style: .continuous).fill(Color.blue))
                         })
                     }.padding(.bottom, 30)
                     HStack {
                         // Setting Button
-                        NavigationLink(destination:MainView(), label: {
+                        NavigationLink(destination:SettingView(), label: {
                             // Start Button
-                            Text("SETTING")
+                            Text("SETTINGS")
                             .font(Style.TextSize.subtitle3.font(.semiBold))
-                            .foregroundColor(Color.red)
+                            .accentColor(.white)
+                            .foregroundColor(Color.accentColor)
                             .frame(width: 125, height: 36, alignment: .center)
                             .background(RoundedRectangle(cornerRadius: 24,
-                                style: .continuous)
-                            .stroke(Color.blue))
+                                style: .continuous).fill(Color.red))
                         }).padding(.bottom, 100)
                     }
                 }

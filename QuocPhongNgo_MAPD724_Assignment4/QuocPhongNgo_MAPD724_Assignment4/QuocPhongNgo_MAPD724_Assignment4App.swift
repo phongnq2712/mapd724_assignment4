@@ -11,12 +11,14 @@ import SwiftUI
 
 @main
 struct QuocPhongNgo_MAPD724_Assignment4App: App {
+    @StateObject var themeManager = ThemeManager()
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(themeManager)
         }
     }
 }
